@@ -12,6 +12,8 @@ RSpec.describe Dish, type: :model do
 
     describe "InDirect Associations" do
 
+    it { should have_many(:venues) }
+
     it { should have_many(:users) }
 
     end
