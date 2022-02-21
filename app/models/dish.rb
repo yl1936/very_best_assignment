@@ -4,17 +4,17 @@ class Dish < ApplicationRecord
   belongs_to :cuisine
 
   has_many   :bookmarks,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
   has_many   :venues,
-             :through => :bookmarks,
-             :source => :venue
+             through: :bookmarks,
+             source: :venue
 
   has_many   :users,
-             :through => :bookmarks,
-             :source => :user
+             through: :bookmarks,
+             source: :user
 
   # Validations
 
@@ -23,5 +23,4 @@ class Dish < ApplicationRecord
   def to_s
     name
   end
-
 end

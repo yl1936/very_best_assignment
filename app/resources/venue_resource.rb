@@ -17,5 +17,4 @@ class VenueResource < ApplicationResource
   many_to_many :dishes
 
   many_to_many :users
-
 end
