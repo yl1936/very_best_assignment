@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cuisines
   resources :bookmarks
   resources :venues
   resources :dishes
