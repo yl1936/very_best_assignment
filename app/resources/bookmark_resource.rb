@@ -9,6 +9,8 @@ class BookmarkResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :venue
+
   belongs_to :dish
 
   # Indirect associations
